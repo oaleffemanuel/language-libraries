@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bibliotecas de Idiomas: leituras gratuitas em italiano, francês e outras línguas</title>
-<meta name="description" content="Uma porta de entrada para novas línguas, literaturas e culturas. Bibliotecas digitais gratuitas para aprender idiomas lendo: histórias graduadas, contos, clássicos e materiais de estudo em italiano, francês e, em breve, latim.">
+<title>Bibliotecas de Idiomas: leituras gratuitas em italiano, francês e latim</title>
+<meta name="description" content="Uma porta de entrada para novas línguas, literaturas e culturas. Bibliotecas digitais gratuitas para aprender idiomas lendo: histórias graduadas, contos, clássicos e materiais de estudo em italiano, francês e latim.">
 <link rel="canonical" href="https://lg.korium.co/">
 <meta property="og:url" content="https://lg.korium.co/">
 <meta property="og:type" content="website">
@@ -20,7 +20,8 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/ebgaramond-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Bibliotecas de Idiomas","url":"https://lg.korium.co/","inLanguage":"pt-BR","description":"Bibliotecas digitais gratuitas para aprender idiomas lendo: italiano, francês e, em breve, latim."}</script>
+<script>if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("anim");</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Bibliotecas de Idiomas","url":"https://lg.korium.co/","inLanguage":"pt-BR","description":"Bibliotecas digitais gratuitas para aprender idiomas lendo: italiano, francês e latim."}</script>
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
@@ -40,61 +41,68 @@
 
 <section class="abertura">
   <div class="wrap">
-    <h1>Bibliotecas de Idiomas</h1>
-    <p class="subtitulo">Uma porta de entrada para novas línguas, literaturas e culturas.</p>
-    <p class="lead">Bibliotecas digitais gratuitas para quem quer aprender um idioma lendo: histórias graduadas para iniciantes, contos, clássicos e materiais de estudo, reunidos de fontes confiáveis e organizados por nível.</p>
-    <a class="botao" href="#bibliotecas">Ver as bibliotecas</a>
+    <h1 class="entrada" style="--i:0">Bibliotecas de Idiomas</h1>
+    <p class="subtitulo entrada" style="--i:1">Uma porta de entrada para novas línguas, literaturas e culturas.</p>
+    <p class="lead entrada" style="--i:2">Bibliotecas digitais gratuitas para quem quer aprender um idioma lendo: histórias graduadas para iniciantes, contos, clássicos e materiais de estudo, reunidos de fontes confiáveis e organizados por nível.</p>
+    <a class="botao entrada" style="--i:3" href="#bibliotecas">Ver as bibliotecas <span class="seta seta-baixo" aria-hidden="true">↓</span></a>
   </div>
 </section>
 
 <section id="bibliotecas" class="wrap secao">
-  <h2>As bibliotecas</h2>
-  <p class="intro">Cada biblioteca é um site independente, com catálogo, plano de leitura e materiais para baixar. Não é preciso cadastro nem conhecer o GitHub.</p>
+  <h2 class="revelar">As bibliotecas</h2>
+  <p class="intro revelar">Cada biblioteca é um site independente, com catálogo, percurso de leitura e materiais de estudo. Não é preciso cadastro nem conhecer o GitHub.</p>
 
   <!-- Bibliotecas publicadas. Para adicionar uma nova, copie um <article class="estante"> e ajuste data-lingua, textos e link. -->
   <div class="estantes">
 
-    <article class="estante" data-lingua="it">
+    <article class="estante revelar" data-lingua="it">
       <span class="faixa" aria-hidden="true"></span>
       <p class="idioma">Italiano</p>
       <h3>Biblioteca Italiana</h3>
+      <p class="lema" lang="it">leggere per imparare</p>
       <p>Literatura italiana, histórias graduadas com áudio, contos e clássicos, com plano de leitura e diário de acompanhamento.</p>
       <ul class="fatos">
         <li>222 obras</li>
         <li>36 com áudio</li>
         <li>Sete etapas, do A1 aos clássicos</li>
       </ul>
-      <a class="botao" href="https://oaleffemanuel.github.io/biblioteca-italiana/">Explorar biblioteca</a>
+      <a class="botao" href="https://oaleffemanuel.github.io/biblioteca-italiana/" aria-label="Explorar a Biblioteca Italiana">Explorar biblioteca <span class="seta" aria-hidden="true">→</span></a>
     </article>
 
-    <article class="estante" data-lingua="fr">
+    <article class="estante revelar" data-lingua="fr">
       <span class="faixa" aria-hidden="true"></span>
       <p class="idioma">Francês</p>
       <h3>Bibliothèque Française</h3>
+      <p class="lema" lang="fr">lire pour apprendre</p>
       <p>Leituras em francês desde livrinhos ilustrados para iniciantes até as grandes obras da literatura francesa, com guia de leitura e áudio.</p>
       <ul class="fatos">
         <li>233 obras</li>
         <li>37 com áudio</li>
         <li>Seis etapas, do A1 aos clássicos</li>
       </ul>
-      <a class="botao" href="https://oaleffemanuel.github.io/biblioth-que-fran-aise/">Explorar biblioteca</a>
+      <a class="botao" href="https://oaleffemanuel.github.io/biblioth-que-fran-aise/" aria-label="Explorar a Bibliothèque Française">Explorar biblioteca <span class="seta" aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="estante revelar" data-lingua="la">
+      <span class="faixa" aria-hidden="true"></span>
+      <p class="idioma">Latim</p>
+      <h3>Bibliotheca Latina</h3>
+      <p class="lema" lang="la">ab initiis ad fontes</p>
+      <p>Do latim elementar aos autores romanos, aos Padres da Igreja e à escolástica medieval, com o curso <i lang="la">Elementa Linguae Latinae</i>, guia de leitura e recursos de estudo.</p>
+      <ul class="fatos">
+        <li>106 recursos</li>
+        <li>24 com áudio</li>
+        <li>Sete etapas de leitura</li>
+      </ul>
+      <a class="botao" href="https://oaleffemanuel.github.io/bibliotheca-latina/" aria-label="Explorar a Bibliotheca Latina">Explorar biblioteca <span class="seta" aria-hidden="true">→</span></a>
     </article>
 
   </div>
 
-  <h3 class="titulo-futuras">Em preparação</h3>
+  <h3 class="titulo-futuras revelar">Em preparação</h3>
 
   <!-- Bibliotecas futuras. Quando uma for publicada, mova-a para .estantes acima e adicione o link. -->
-  <div class="futuras">
-
-    <article class="futura destaque" data-lingua="la">
-      <span class="faixa" aria-hidden="true"></span>
-      <div>
-        <p class="idioma">Latim <span class="estado">Em desenvolvimento</span></p>
-        <h4>Bibliotheca Latina</h4>
-        <p>Do latim para iniciantes e leituras graduadas à literatura clássica, medieval, patrística e cristã, com filosofia, textos históricos, gramáticas e áudio quando disponível.</p>
-      </div>
-    </article>
+  <div class="futuras revelar">
 
     <article class="futura" data-lingua="es">
       <span class="faixa" aria-hidden="true"></span>
